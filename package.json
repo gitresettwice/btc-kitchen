@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "axios": "^0.21.0",
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "xpresser": "^0.4.2"
+  }
+}
