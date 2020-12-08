@@ -1,4 +1,12 @@
 {
+  "name": "btc-kitchen",
+  "version": "1.0.0",
+  "description": "A small btc kitchen for xpresser",
+  "main": "index.js",
+  "repository": "https://github.com/trapcodeio/btc-kitchen.git",
+  "author": "trapcodeio <trapcode.io@gmail.com>",
+  "license": "MIT",
+  "private": true,
   "dependencies": {
     "axios": "^0.21.0",
     "moment": "^2.29.1"
