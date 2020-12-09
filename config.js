@@ -8,4 +8,4 @@ const pluginConfig = $.objectCollection(
 
 pluginConfig.merge(userDefinedConfig);
 
-module.exports = pluginConfig;
+module.exports = {$, pluginConfig};
