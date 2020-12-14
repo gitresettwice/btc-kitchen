@@ -20,11 +20,7 @@ module.exports = (http) => {
         return error(http, `No valid headers in request!`);
 
     // Check Expected Body fields.
-    const body = http.body();
-    const required = ['merchant', 'item_number', 'status'];
-
-    if (!body.exists(required))
-        return error(http, `Incomplete body request!`)
+    const body = http.$body;
 
     // Check if merchant codes match
     const merchantCodeFromRequest = body.get('merchant');
