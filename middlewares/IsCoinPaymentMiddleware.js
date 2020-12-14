@@ -1,4 +1,4 @@
-const IPNValidator = require('../lib/CoinPayments/CoinPaymentIPNValidator');
+const IPNValidator = require('../lib/CoinPayments/IPNValidator');
 const $ = xpresserInstance();
 /**
  * Error Handler
