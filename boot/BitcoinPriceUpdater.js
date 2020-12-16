@@ -1,9 +1,10 @@
 const moment = require('moment');
 const BtcKitchen = require("../BtcKitchen");
-const $ = xpresserInstance();
+const {$, pluginConfig} = require('../plugin-config')
+
 
 const $store = $.store.path('BtcKitchen');
-const refreshInterval = $store.get('refreshInterval', 2);
+const refreshInterval = pluginConfig.get('refreshInterval', 2);
 
 function callPriceChecker() {
     const priceDotJsonPath = $.path.storage('btc-kitchen/price.json');

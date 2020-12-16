@@ -1,5 +1,5 @@
 const axios = require('axios');
-const $ = xpresserInstance();
+const ObjectCollection = require("object-collection")
 
 class BtcKitchen {
     static async checkBitcoinPrice() {
@@ -8,7 +8,7 @@ class BtcKitchen {
         let {data} = await axios.get(endpoint);
 
         if (data) {
-            data = $.objectCollection(data);
+            data = ObjectCollection.use(data);
             if (data.has('USD[15m]')) {
                 return data.get('USD[15m]');
             }

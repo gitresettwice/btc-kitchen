@@ -1,4 +1,4 @@
-const {pluginConfig} = require('./config');
+const {pluginConfig} = require('./plugin-config');
 
 module.exports = {
   run(config, $) {
