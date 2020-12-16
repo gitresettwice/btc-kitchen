@@ -1,4 +1,4 @@
-module.exports = {
+module.exports =($) => ({
     /**
      * Enable this plugin
      */
@@ -20,4 +20,4 @@ module.exports = {
             secret: null,
         }
     })
-}
+})
