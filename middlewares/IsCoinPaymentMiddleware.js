@@ -10,7 +10,7 @@ const error = (http, error) => http.res.status(401).send({error});
 /**
  * Get coin payments settings.
  */
-const coinPaymentsConfig = pluginConfig.get('coinPaymentsConfig');
+const coinPaymentsConfig = pluginConfig.get('coinPaymentsConfig.keys');
 const ipnCode = coinPaymentsConfig['ipnCode'];
 const merchantId = coinPaymentsConfig['merchantId'];
 
