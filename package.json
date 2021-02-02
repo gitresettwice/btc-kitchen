@@ -6,7 +6,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "@xpresser/plugin-tools": "^1.1.0",
+    "@xpresser/plugin-tools": "^1.2.0",
     "axios": "^0.21.1",
     "moment": "^2.29.1",
     "object-collection": "^1.0.31"
