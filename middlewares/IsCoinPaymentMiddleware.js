@@ -1,13 +1,18 @@
 const IPNValidator = require('../lib/CoinPayments/IPNValidator');
-const $ = xpresserInstance();
+const {pluginConfig} = require('../plugin-config');
 /**
  * Error Handler
  * @param http
  * @param error
  */
 const error = (http, error) => http.res.status(401).send({error});
-const ipnCode = $.env('coinPaymentIpnCode');
-const merchantCode = $.env('coinPaymentMerchantCode');
+
+/**
+ * Get coin payments settings.
+ */
+const coinPaymentsConfig = pluginConfig.get('coinPaymentsConfig');
+const ipnCode = coinPaymentsConfig['ipnCode'];
+const merchantId = coinPaymentsConfig['merchantId'];
 
 /**
  * IsCoinPaymentMiddleware
@@ -24,7 +29,7 @@ module.exports = (http) => {
   
   // Check if merchant codes match
   const merchantCodeFromRequest = body.get('merchant');
-  if (merchantCodeFromRequest !== merchantCode)
+  if (merchantCodeFromRequest !== merchantId)
     return error(http, `Invalid merchant code!`);
   
   // Validate Hmac

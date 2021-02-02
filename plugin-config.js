@@ -1,6 +1,6 @@
-const Tools = require("@xpresser/plugin-tools");
+const Tools = require('@xpresser/plugin-tools');
 const {namespace} = require('./use.json');
-const importableConfig = require("./exports/btc-kitchen");
+const importableConfig = require('./exports/btc-kitchen');
 
 /**
  * export
@@ -8,7 +8,7 @@ const importableConfig = require("./exports/btc-kitchen");
  */
 module.exports = Tools.ConfigHelpers.loadPluginConfig({
   namespace,
-  type: "function",
-  configFile: "btc-kitchen",
-  default: importableConfig
-})
+  type: 'function',
+  configFile: 'btc-kitchen',
+  default: importableConfig,
+});
