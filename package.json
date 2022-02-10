@@ -1,0 +1,20 @@
+{
+  "name": "btc-kitchen",
+  "version": "1.0.2",
+  "description": "Btc price checker",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "cd tests && nodemon server.js"
+  },
+  "dependencies": {
+    "@xpresser/plugin-tools": "^1.2.1",
+    "axios": "^0.25.0",
+    "moment": "^2.29.1",
+    "object-collection": "^3.0.0"
+  },
+  "devDependencies": {
+    "xpresser": "^0.26.11"
+  }
+}

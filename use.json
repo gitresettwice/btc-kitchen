@@ -1,0 +1,7 @@
+{
+  "namespace": "btc-kitchen",
+  "use_index": true,
+  "importable": {
+    "configs": "exports/btc-kitchen.js"
+  }
+}
